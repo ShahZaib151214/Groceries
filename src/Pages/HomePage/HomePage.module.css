@@ -1,0 +1,889 @@
+  .backgroundImage {
+    background-image: url('../../assets/homepics/bg.jpg');
+    
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 100vw; 
+    min-height: 100vh; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .section {
+    background-image: url('../../assets/homepics/1.jfif'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 80vw;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+  }
+  
+  .contentsection {
+    position: relative;
+    z-index: 2; 
+    width: 40%;
+    color: white;
+    text-align: center;
+    justify-content:center ;
+  }
+  
+  .contentsection  .title {
+    font-size: 4rem;
+  
+    color: white;
+    font-family: kaushan script ;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-left: -2vw ;
+    padding: 2px 20px;
+    height: 40px;
+    font-size: 1.2rem;
+    color: #674D00;
+    background-color: transparent;
+    border: 2px solid #674D00;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow:auto; 
+
+   display: block;
+    width: 80vw;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .carouselTitle {
+    font-size: 34px;
+    margin-bottom: 16px;
+    color: white;
+  }
+
+  
+  .card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 400px ;
+    padding: 10px 25px ;
+
+    margin: 0 10px;
+    background-color: #031E00;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .cardImage img {
+    width: 200px;
+    height: 200px;
+    border-radius:30px ;
+  }
+  
+  .cardTitle {
+    font-size: 18px;
+    font-style: bold;
+    font-weight: 600;
+    color: white;
+    margin: 10px;
+  }
+  
+  .cardDetails {
+    font-size: 14px;
+    color: white;
+    margin: 0 10px;
+  }
+  
+  .addToCartButton {
+    margin: 10px;
+    margin-left: 20px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #674d00;
+    border:1x solid #674d00;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addToCartButton:hover {
+    background-color: white;
+
+  }
+  
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .arrowLeft {
+    left: 10px;
+    width: 80px;
+    margin-left: 0px;
+  }
+  
+  .arrowRight {
+    width: 80px;
+    right: 10px;
+    
+  }
+  
+
+  .cardContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 10px;
+  }
+
+
+  .bannerLemon {
+    
+    background-image: url('../../assets/homepics/lemon.jpg'); 
+    margin-top: 20px ;
+    background-size: cover; 
+    border-radius: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 80vw;
+    height:40vh;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  .bannerLemon .leftArea{
+    width: 30%;
+    height: 100%;
+  }
+  .leftArea img{
+    width: 25vw;
+    height: 40vh;
+    
+  }
+  .bannerLemon .rightArea{
+    padding: 10px 5px;
+    width: 70%;
+    height: 90%;
+    justify-content: center ;
+    text-align: center;
+  }
+  .rightArea h1{
+    text-align: center;
+    width: 45vw;
+    color: white;
+    font-weight: 600;
+  }
+  .rightArea p{
+    width: 45vw ;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+  } 
+
+
+  .cokaPromoContainer{
+    width: 80vw;
+    height: 100vh;
+    border-radius: 10px;
+    background-color:#031E00 ;
+    margin: 40px auto;
+    display: flex;
+  }
+  .cokaPromoContainer .leftimg{
+    flex: 1;
+    width:50vw ;
+    padding: 10vh 10vw;
+   
+  }
+  .leftimg img{
+    width: 20vw;
+    height: 80vh;
+   
+  }
+
+  .cokaPromoContainer .rightside{
+    width: 50%;
+    padding-top: 100px;
+  }
+  .rightside h1{
+    width: 100% ;
+    font-weight: bold;
+    color: white;
+  }
+  .rightside h4{
+    color: white;
+  }
+  .rightside p{
+    color: white;
+  }
+  .rightside button{
+    float: left;
+    margin-left: 0px;
+    width: 60%;
+    color: #674d00;
+  
+  }
+
+  .promoImageBox{
+    margin-top: 40px;
+    width: 80vw;
+    height: 80vh;
+    background-color: transparent;
+    display:flex;
+  }
+  .promoImageBox .leftImageBox{
+    width: 30%;
+    height: 100%;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    
+  }
+  .leftImageBox .img{
+    width: 20vw;
+    height: 30vh;
+    margin: 20px;
+    border-radius: 10px;
+
+  }
+  .promoImageBox .centerImageBox{
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    
+  }
+  .centerImageBox .centerimg{
+    width: 100%;
+    border-radius: 10px;
+    height: 66vh;
+    margin: 20px 0px;
+  }
+  .promoImageBox .rightImageBox{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    
+  }
+  .rightImageBox .rightimgs{
+    width: 20vw;
+    height: 30vh;
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+
+
+  .bannerLemon2 {
+    
+    background-image: url('../../assets/homepics/26.jpg'); 
+    margin-top: 20px ;
+    background-size: cover; 
+    border-radius: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 80vw;
+    height:50vh;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  .bannerLemon2 .leftArea2{
+    width: 30%;
+    height: 100%;
+    padding: 30px 10px;
+  }
+  .leftArea2 img{
+    height: 40vh;
+    width: 25vw;
+    border-radius: 30px;
+    
+  }
+  .bannerLemon2 .rightArea2{
+    padding: 10px 5px;
+    width: 70%;
+    height: 90%;
+    justify-content: center ;
+    text-align: center;
+  }
+  .rightArea2 h1{
+    text-align: center;
+    width: 45vw;
+    color: white;
+    font-weight: 600;
+  }
+  .rightArea2 p{
+    width: 45vw ;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+  } 
+
+
+  .promoImageBox2{
+    padding: 10px;
+    margin-top: 40px;
+    width: 80vw;
+    height: 80vh;
+    
+    background-color: #031E00;
+    display:flex;
+  }
+  .promoImageBox2 .leftBox2{
+    width: 50%;
+    padding: 4px;
+    gap: 10px;
+    background-color: transparent;
+    display: flex;
+  }
+  .leftBox2 .underleftBox{
+ width: 40%;
+ display: flex;
+ flex-direction: column;
+ gap: 5vh;
+ background-color: transparent;
+  }
+  .underleftBox .Box2img1{
+    width: 100%;
+    background-size: cover;
+    background-image: url("../../assets/homepics/45.jfif");
+    height: 35vh;
+    border-radius:8px ;
+
+   }
+
+   .underleftBox .Box2img2{
+    width: 100%;
+    background-size: cover;
+    background-image: url("../../assets/homepics/46.jfif");
+    background-repeat: no-repeat;
+    height: 35vh;
+    border-radius:8px ;
+
+   }
+
+  .leftBox2 .underrightBox{
+    width: 60%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+     }
+     .underrightBox .Box2top{
+      width: 100%;
+      background-image: url("../../assets/homepics/50.jfif");
+      background-size:cover;
+      border-radius: 8px;
+      height: 50vh;
+     }
+    
+    .underrightBox .Box2bottom{
+     width: 100%;
+     background-image: url("../../assets/homepics/51.jfif");
+     background-size:cover;
+     border-radius: 8px;
+     height: 35vh;
+    }
+
+
+  .promoImageBox2 .rightBox2{
+    width: 50%;
+   gap:20px;
+    padding: 4px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+  }
+  .promoImageBox2 .underupperBox{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    gap:20px;
+    height: 50% ;
+     }
+     .underupperBox .leftportion1{
+      width: 50%;
+      height: 100%;
+      border-radius: 8px;
+      background-image: url("../../assets/homepics/47.jfif");
+      
+     }
+     .underupperBox .rightportion1{
+      width: 50%;
+      height: 100%;
+      border-radius: 8px;
+      background-image: url("../../assets/homepics/48.jfif");
+      
+     }
+
+     .promoImageBox2 .underlowerBox{
+      width: 100%;
+      gap: 20px;
+      background-color: transparent;
+      display: flex;
+      height: 50% ;
+       }
+       .underlowerBox .leftportion2{
+        width: 60%;
+        height: 100%;
+        border-radius: 8px;
+        background-image: url("../../assets/homepics/52.jfif");
+        
+       }
+       .underlowerBox .rightportion2{
+        width: 40%;
+        height: 100%;
+        border-radius: 8px;
+        background-image: url("../../assets/homepics/53.jfif");
+        
+       }
+@media (max-width:750px) {
+
+
+
+
+
+
+
+  .promoImageBox2{
+   flex-direction: column;
+   gap: 20px;
+   height: auto;
+    display:flex;
+  }
+  .promoImageBox2 .leftBox2{
+    width: 100%;
+    padding: 4px;
+    gap: 10px;
+    background-color: transparent;
+    display: flex;
+
+  }
+
+
+
+   
+      .underleftBox .Box2img2{
+       width: 100%;
+       background-size: cover;
+       background-image: url("../../assets/homepics/46.jfif");
+       background-repeat: no-repeat;
+       height: 35vh;
+       border-radius:8px ;
+   
+      }
+
+
+  .promoImageBox2 .rightBox2{
+    width: 100%;
+    padding: 4px;
+    gap: 10px;
+   min-height: 70vh;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .rightBox2 .underupperBox{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    gap:20px;
+    height: 50% ;
+     }
+     .underupperBox .leftportion1{
+      width: 50%;
+      min-height:40vh;
+      background-repeat: no-repeat;
+      height: 40vh;
+      border-radius: 8px;
+      background-image: url("../../assets/homepics/47.jfif");
+      
+     }
+     .underupperBox .rightportion1{
+      width: 50%;
+      min-height: 40vh;
+      height: 40vh;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      background-image: url("../../assets/homepics/48.jfif");
+      
+     }
+
+     .promoImageBox2 .underlowerBox{
+      width: 100%;
+      gap: 5px;
+      background-color: transparent;
+      display: flex;
+      height: 50% ;
+       }
+       .underlowerBox .leftportion2{
+        width: 60vw;
+        height: 100%;
+        background-repeat: no-repeat;
+        min-height: 40vh;
+        border-radius: 8px;
+        background-image: url("../../assets/homepics/52.jfif");
+        
+       }
+       .underlowerBox .rightportion2{
+        width: 40vw;
+        min-height: 40vh;
+        background-repeat: no-repeat;
+        height: 100%;
+        border-radius: 8px;
+        background-image: url("../../assets/homepics/53.jfif");
+        
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+ }
+
+
+@media (max-width:650px) {
+    .contentsection{
+    width: 80%;
+  }
+
+
+
+  .card {
+
+    width: 120px;
+    height: 280px ;
+    padding: 10px 10px ;
+
+
+  }
+  
+  .cardImage img {
+    width: 100px;
+    height: 120px;
+    border-radius:10px ;
+  }
+  
+  .cardTitle {
+    font-size: 8px;
+    font-style: bold;
+    font-weight: 400;
+    color: white;
+    margin: 10px;
+  }
+  
+  .cardDetails {
+    font-size: 6px;
+    color: white;
+    margin: 0 10px;
+  }
+  
+  .addToCartButton {
+    
+    width: 100px;
+    margin-left: 10px;
+    padding: 4px 8px;
+   
+    color: #674d00;
+    border:1x solid #674d00;
+    font-size:10px ;
+    border-radius: 5px;
+
+  }
+  
+  .addToCartButton:hover {
+    background-color: white;
+
+  }
+  
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+   
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .arrowLeft {
+    width: 50px;
+    left: 10px;
+    margin-left: 0px;
+  }
+  
+  .arrowRight {
+    width: 50px;
+    right: 10px;
+    
+  }
+
+  .rightside button{
+    float: left;
+    margin-left: 0px;
+    width: 60%;
+    color: #674d00;
+    font-size: 12px;
+  
+  }
+
+
+   
+  .promoImageBox{
+    height: auto ;
+    background-color: transparent;
+    display:flex;
+    flex-direction: column ;
+    gap: 10px ;
+  }
+  .promoImageBox .leftImageBox{
+    width: 100%;
+    height: auto;
+    gap:10px;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    padding-right: 2vw;
+    
+  }
+  .leftImageBox .img{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 10px;
+
+  }
+  .promoImageBox .centerImageBox{
+    width: 100%;
+    height: 40vh;
+
+  }
+  .centerImageBox .centerimg{
+    width: 100%;
+    border-radius: 10px;
+    height: 69vh;
+    margin: 20px 0px;
+  }
+
+  .promoImageBox .rightImageBox{
+    width: 100%;
+    margin-top: 30vh;
+    height: auto;
+    gap:10px;
+    display: flex;
+    flex-direction: row;
+
+    padding-right: 2vw;
+    
+  }
+  .rightImageBox .rightimgs{
+    width: 30vw;
+    height: 30vw;
+    border-radius: 10px;
+
+  }
+
+  
+
+} 
+
+  @media (max-width:480px) {
+    .section{
+      padding-top: 10vh;
+    }
+    .contentsection{
+    width: 100%;
+    
+  }
+
+  .contentsection  .title {
+    font-size: 3rem;}
+
+  .rightside button{
+    float: left;
+    margin-left: 0px;
+    width: 90%;
+    color: #674d00;
+    font-size: 12px;
+  
+  }
+
+
+
+
+
+
+
+  .promoImageBox2{
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+     display:flex;
+   }
+   .promoImageBox2 .leftBox2{
+     width: 100vw;
+     padding: 4px;
+     gap: 10px;
+     background-color: transparent;
+     display: flex;
+     flex-direction: column;
+ 
+   }
+ 
+ 
+ 
+    
+       .underleftBox .Box2img2{
+        width: 70vw;
+        background-size: cover;
+        background-image: url("../../assets/homepics/46.jfif");
+        background-repeat: no-repeat;
+        height: 35vh;
+        border-radius:8px ;
+
+    
+       }
+ 
+ 
+   .promoImageBox2 .rightBox2{
+     width: 100%;
+     padding: 4px;
+     gap: 10px;
+    min-height: 70vh;
+     background-color:transparent;
+     display: flex;
+     flex-direction: column;
+   }
+ 
+ 
+   .rightBox2 .underupperBox{
+     width: 100%;
+     background-color: transparent;
+     display: flex;
+     flex-direction: column;
+     gap:20px;
+     height: 50% ;
+      }
+      .underupperBox .leftportion1{
+       width: 100vw;
+       min-height:40vh;
+       background-repeat: no-repeat;
+       height: 40vh;
+       border-radius: 8px;
+       background-image: url("../../assets/homepics/47.jfif");
+       
+      }
+      .underupperBox .rightportion1{
+       width: 100vw;
+       min-height: 40vh;
+       height: 40vh;
+       background-repeat: no-repeat;
+       border-radius: 8px;
+       background-image: url("../../assets/homepics/48.jfif");
+       
+      }
+ 
+      .promoImageBox2 .underlowerBox{
+       width: 100%;
+       gap: 5px;
+       background-color: transparent;
+       display: flex;
+       flex-direction: column;
+       height: 50% ;
+        }
+        .underlowerBox .leftportion2{
+         width: 100vw;
+         height: 100%;
+         background-repeat: no-repeat;
+         min-height: 40vh;
+         border-radius: 8px;
+         background-image: url("../../assets/homepics/52.jfif");
+         
+        }
+        .underlowerBox .rightportion2{
+         width: 100vw;
+         min-height: 40vh;
+         background-repeat: no-repeat;
+         height: 100%;
+         border-radius: 8px;
+         background-image: url("../../assets/homepics/53.jfif");
+         
+        }
+ 
+
+} 
+
+
+
+
+  
