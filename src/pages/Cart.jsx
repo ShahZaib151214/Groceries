@@ -36,7 +36,7 @@ const Cart = () => {
         </div>
         <h2 className="text-3xl font-bold text-gray-900 mb-4">Your Cart is Empty</h2>
         <p className="text-gray-500 mb-8 max-w-md mx-auto">Looks like you haven't made your choice yet. Browse our shop to find the best fresh products.</p>
-        <Link to="/groceries/shop">
+        <Link to="/Groceries/shop">
           <Button variant="primary" className="px-8 py-3">Start Shopping</Button>
         </Link>
       </div>
@@ -97,7 +97,7 @@ const Cart = () => {
           ))}
           
           <div className="flex justify-between items-center pt-6">
-             <Link to="/groceries/shop" className="text-gray-500 font-medium hover:text-emerald-600 flex items-center gap-2 transition-colors">
+             <Link to="/Groceries/shop" className="text-gray-500 font-medium hover:text-emerald-600 flex items-center gap-2 transition-colors">
                ← Continue Shopping
              </Link>
           </div>
@@ -129,7 +129,7 @@ const Cart = () => {
               </div>
             </div>
             
-            <Link to="/groceries/checkout">
+            <Link to="/Groceries/checkout">
               <Button variant="primary" className="w-full py-4 text-lg flex justify-center items-center gap-2 shadow-lg shadow-emerald-500/30 hover:scale-[1.02]">
                 Proceed to Checkout <FiArrowRight />
               </Button>

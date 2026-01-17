@@ -12,22 +12,22 @@ import Signup from './pages/Signup';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Layout>
         <Routes>
-          <Route path="/groceries" element={<Home />} />
-          <Route path="/groceries/shop" element={<Shop />} />
-          <Route path="/groceries/about" element={<About />} />
-          <Route path="/groceries/contact" element={<Contact />} />
-          <Route path="/groceries/login" element={<Login />} />
-          <Route path="/groceries/signup" element={<Signup />} />
-          <Route path="/groceries/product/:id" element={<ProductDetails />} />
-          <Route path="/groceries/cart" element={<Cart />} />
-          <Route path="/groceries/checkout" element={<Checkout />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
           {/* Fallback for 404 */}
           <Route path="*" element={<div className="text-center py-20 text-gray-500">Page Not Found</div>} />
         </Routes>
       </Layout>
-    </BrowserRouter>
+    </BrowserRouter>    
   )
 }

@@ -20,10 +20,10 @@ const Navbar = () => {
   }, [location]);
 
   const navLinks = [
-    { name: 'Home', path: '/groceries/' },
-    { name: 'Shop', path: '/groceries/shop' },
-    { name: 'About', path: '/groceries/about' },
-    { name: 'Contact', path: '/groceries/contact' },
+    { name: 'Home', path: '/' },
+    { name: 'Shop', path: '/shop' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   return (
@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link to="groceries/" className="text-2xl font-bold text-gray-900 flex items-center gap-2 group">
+            <Link to="/" className="text-2xl font-bold text-gray-900 flex items-center gap-2 group">
               <div className="bg-emerald-600 text-white p-2 rounded-xl shadow-lg shadow-emerald-600/20 group-hover:scale-110 transition-transform">
                 G
               </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
                 <FiHeart size={20} />
               </button>
               <Link 
-                to="/groceries/cart" 
+                to="/cart" 
                 className="w-10 h-10 rounded-full flex items-center justify-center text-gray-500 hover:bg-emerald-50 hover:text-emerald-600 transition-all relative group"
               >
                 <FiShoppingCart size={20} />
@@ -79,7 +79,7 @@ const Navbar = () => {
                 </span>
               </Link>
               <Link 
-                to="/groceries/login"
+                to="/login"
                 className="ml-2 bg-gray-900 text-white px-5 py-2 rounded-full text-sm font-medium shadow-lg shadow-gray-900/20 hover:bg-gray-800 hover:shadow-xl transition-all hover:-translate-y-0.5"
               >
                 Login
@@ -116,7 +116,7 @@ const Navbar = () => {
             </Link>
           ))}
           <div className="flex gap-6 mt-8">
-            <Link to="/groceries/cart" className="relative p-3 bg-gray-100 rounded-full text-gray-800">
+            <Link to="/cart" className="relative p-3 bg-gray-100 rounded-full text-gray-800">
                <FiShoppingCart size={24} />
                <span className="absolute -top-1 -right-1 bg-emerald-600 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">2</span>
             </Link>

@@ -9,7 +9,7 @@ const Login = () => {
     e.preventDefault();
     // Validate credentials (mock)
     // On success:
-    navigate('/groceries/');
+    navigate('/');
   };
 
   return (
@@ -51,7 +51,7 @@ const Login = () => {
 
         <div className="mt-8 text-center text-sm text-gray-500">
           Don't have an account?{' '}
-          <Link to="/groceries/signup" className="text-emerald-600 font-bold hover:underline">
+          <Link to="/signup" className="text-emerald-600 font-bold hover:underline">
             Create Account
           </Link>
         </div>
