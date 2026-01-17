@@ -1,39 +1,33 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
+import Home from './pages/Home';
+import Shop from './pages/Shop';
+import ProductDetails from './pages/ProductDetails';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
-
-import Context from "./Context/Context"; 
-import ContactUs from "./Pages/ContactUs/ContactUs";
-import LoginPage from "./Pages/LoginPage/LoginPage";
-import { useState } from "react";
-import ProductPage from "./Pages/Product/ProductPage";
-import {BrowserRouter , Routes , Route} from 'react-router-dom'
-import HomePage from "./Pages/HomePage/HomePage";
-import AboutUs from "./Pages/AboutUs/AboutUs";
-
-
-
-
-const App = () => {
-  const [login, setLogin] = useState(false);
-
+export default function App() {
   return (
-    <>
-      <Context.Provider value={{ login, setLogin }}>
-       
-        <BrowserRouter>
-
-          <Routes >
-              <Route path='/' element = {<HomePage />} />
-              <Route path='/About' element = {<AboutUs />} />
-              <Route path='/Login' element = {<LoginPage />} />
-              <Route path = '/Contact' element = {<ContactUs />} />
-               <Route path = '/Product' element = {<ProductPage />} />
-              
-           </Routes>
-         </BrowserRouter>
-      </Context.Provider>
-   
-    </>
-  );
-};
-
-export default App;
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/groceries" element={<Home />} />
+          <Route path="/groceries/shop" element={<Shop />} />
+          <Route path="/groceries/about" element={<About />} />
+          <Route path="/groceries/contact" element={<Contact />} />
+          <Route path="/groceries/login" element={<Login />} />
+          <Route path="/groceries/signup" element={<Signup />} />
+          <Route path="/groceries/product/:id" element={<ProductDetails />} />
+          <Route path="/groceries/cart" element={<Cart />} />
+          <Route path="/groceries/checkout" element={<Checkout />} />
+          {/* Fallback for 404 */}
+          <Route path="*" element={<div className="text-center py-20 text-gray-500">Page Not Found</div>} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
+  )
+}
